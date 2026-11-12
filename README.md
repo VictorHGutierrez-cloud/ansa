@@ -63,8 +63,10 @@ https://victorhgutierrez-cloud.github.io/ansa/
 ### Publicar alterações
 
 1. Faz commit e push para a branch `main` **neste repositório** (`ansa`).
-2. O workflow **Deploy to GitHub Pages** corre sozinho, faz `npm run build` e publica a pasta `dist/`.
-3. No GitHub: **Settings → Pages** → em **Build and deployment → Source**, escolhe **GitHub Actions** (não a branch `gh-pages`).
+2. O workflow **Deploy to GitHub Pages** corre sozinho, faz `npm run build` e publica na branch `gh-pages`.
+3. No GitHub: **Settings → Pages** → **Source** = **Deploy from a branch** → branch **`gh-pages`**, pasta **`/ (root)`**.
+
+Se o deploy falhar com **404**, lê o ficheiro **`GITHUB_PAGES.md`** (passo a passo completo).
 
 ### Build local com o mesmo caminho do Pages
 
